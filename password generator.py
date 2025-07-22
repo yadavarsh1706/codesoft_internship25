@@ -1,33 +1,3 @@
-# import random
-# import string
-
-# def generate_secure_password(length):
-#     if length < 4:
-#         return "Password length must be at least 4 for a secure password."
-
-#     # Ensure minimum one of each type
-#     password = [
-#         random.choice(string.ascii_lowercase),
-#         random.choice(string.ascii_uppercase),
-#         random.choice(string.digits),
-#         random.choice(string.punctuation)
-#     ]
-
-#     remaining = length - 4
-#     all_chars = string.ascii_letters + string.digits + string.punctuation
-#     password += random.choices(all_chars, k=remaining)
-
-#     random.shuffle(password)
-#     return ''.join(password)
-
-# # Main
-# print("Password Generator")
-# try:
-#     length = int(input("Enter password length: "))
-#     password = generate_secure_password(length)
-#     print("Generated Password:", password)
-# except ValueError:
-#     print("Please enter a valid number.")
 import tkinter as tk
 from tkinter import messagebox
 import random
